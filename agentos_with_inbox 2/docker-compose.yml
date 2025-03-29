@@ -1,0 +1,8 @@
+version: "3.9"
+
+services:
+  inbox-agent:
+    build: ./apps/inbox-agent
+    ports:
+      - "8082:8082"
+    restart: unless-stopped
